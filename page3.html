@@ -211,7 +211,7 @@
     <section>
       <div class="form-wrapper">
         <h2 class="form-title">Prendre un rendez-vous</h2>
-        <form id="rdvForm" novalidate>
+        <form action="https://formsubmit.co/lesonglesdelola76@gmail.com" method="POST">
           <label for="nom">Nom :</label>
           <input type="text" id="nom" name="nom" required />
 
@@ -234,47 +234,5 @@
       </div>
     </section>
   </div>
-
-  <script>
-    const form = document.getElementById('rdvForm');
-    const messageBox = document.getElementById('formMessage');
-
-    form.addEventListener('submit', function(event) {
-      event.preventDefault();
-      messageBox.textContent = '';
-      messageBox.classList.remove('error');
-
-      const nom = form.nom.value.trim();
-      const email = form.email.value.trim();
-      const date = form.date.value;
-      const heure = form.heure.value;
-
-      if (!nom || !email || !date || !heure) {
-        messageBox.textContent = 'Veuillez remplir tous les champs obligatoires.';
-        messageBox.classList.add('error');
-        return;
-      }
-
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRegex.test(email)) {
-        messageBox.textContent = 'Veuillez entrer un email valide.';
-        messageBox.classList.add('error');
-        return;
-      }
-
-      const now = new Date();
-      const selectedDate = new Date(date + 'T' + heure);
-      if (selectedDate < now) {
-        messageBox.textContent = 'Veuillez choisir une date et une heure futures.';
-        messageBox.classList.add('error');
-        return;
-      }
-
-      messageBox.textContent = `Merci ${nom}, votre rendez-vous est prévu le ${date} à ${heure}. Nous vous contacterons bientôt !`;
-
-      form.reset();
-    });
-  </script>
-
 </body>
 </html>
