@@ -5,10 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Prise de rendez-vous - Les Ongles De Lola 76</title>
   <style>
-    /* Import police Lobster */
     @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-    /* Couleurs */
     :root {
       --rose-fonce: #D63384;
       --rose-pastel: #FFB6C1;
@@ -106,7 +104,7 @@
 
     .form-title {
       font-size: 2rem;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       color: var(--rose-fonce);
     }
 
@@ -125,7 +123,7 @@
       font-weight: bold;
     }
 
-    input, textarea {
+    input, textarea, select {
       width: 100%;
       padding: 10px;
       margin-top: 8px;
@@ -157,12 +155,13 @@
       text-align: center;
     }
 
-    .error {
-      color: red;
+    .dispo-note {
+      font-weight: bold;
       text-align: center;
+      color: var(--rose-fonce);
+      margin-bottom: 15px;
     }
 
-    /* Responsive */
     @media (max-width: 900px) {
       .container {
         flex-direction: column;
@@ -200,10 +199,9 @@
         <li><a href="page1.html" class="btn">Accueil</a></li>
         <li><a href="page2.html" class="btn">Dernières réalisations</a></li>
         <li><a href="page4.html" class="btn">À propos</a></li>
-        <li><a href="page5.html" class="btn">Avis clients</a></li>
         <li><a href="page6.html" class="btn">Conseils & entretien</a></li>
-        <li><a href="page7.html" class="btn">Offres et promos</a></li>
-        <li><a href="page8.html" class="btn">Liens vers mes réseaux sociaux</a></li>
+        <li><a href="page7.html" class="btn">Tarifs</a></li>
+        <li><a href="page8.html" class="btn">Réseaux sociaux</a></li>
         <li><a href="mailto:lesonglesdelola@gmail.com" class="btn">Envoyer un email 📧</a></li>
       </ul>
     </nav>
@@ -211,6 +209,8 @@
     <section>
       <div class="form-wrapper">
         <h2 class="form-title">Prendre un rendez-vous</h2>
+        <p class="dispo-note">🌸 Disponibilités : du 1er au 31 août, de 9h30 à 18h 🌸</p>
+
         <form action="https://formsubmit.co/lesonglesdelola76@gmail.com" method="POST">
           <label for="nom">Nom :</label>
           <input type="text" id="nom" name="nom" required />
@@ -219,10 +219,17 @@
           <input type="email" id="email" name="email" required />
 
           <label for="date">Date du rendez-vous :</label>
-          <input type="date" id="date" name="date" required />
+          <input type="date" id="date" name="date" required min="2025-08-01" max="2025-08-31" />
 
           <label for="heure">Heure :</label>
-          <input type="time" id="heure" name="heure" required />
+          <input type="time" id="heure" name="heure" required min="09:30" max="18:00" />
+
+          <label for="lieu">Lieu du rendez-vous :</label>
+          <select id="lieu" name="lieu" required>
+            <option value="">-- Choisissez un lieu --</option>
+            <option value="Chez Vous">Chez Vous</option>
+            <option value="Chez Moi">Chez Moi</option>
+          </select>
 
           <label for="message">Message (optionnel) :</label>
           <textarea id="message" name="message" rows="4"></textarea>
