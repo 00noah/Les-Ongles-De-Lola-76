@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mes Réseaux Sociaux - Les Ongles de Lola 76</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+    /* --- Couleurs principales --- */
+    :root {
+        --rose-fonce: #D63384;
+        --rose-pastel: #FFB6C1;
+        --rose-soutenu: #FF69B4;
+        --texte-fonce: #000000;
+        --blanc: #fff;
+    }
+
+    /* --- Style général --- */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: 'Lobster', cursive;
+        background-color: var(--rose-pastel);
+        color: var(--texte-fonce);
+    }
+
+    /* --- En-tête --- */
+    header {
+        text-align: center;
+        padding: 20px;
+        background: linear-gradient(90deg, var(--rose-fonce), var(--rose-soutenu));
+        color: var(--blanc);
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+
+    /* --- Structure principale --- */
+    .container {
+        display: flex;
+        flex: 1;
+    }
+
+    /* --- Menu de gauche --- */
+    nav {
+        width: 250px;
+        background-color: var(--rose-pastel);
+        padding: 20px;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    }
+
+    nav h2 {
+        color: var(--rose-soutenu);
+        text-align: center;
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    nav li {
+        margin-bottom: 15px;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        background: var(--blanc);
+        color: var(--rose-fonce);
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+        background: var(--rose-soutenu);
+        color: var(--blanc);
+    }
+
+    /* --- Contenu principal --- */
+    main {
+        flex: 1;
+        padding: 40px;
+        text-align: center;
+    }
+
+    main h2 {
+        font-size: 2rem;
+        margin-bottom: 40px;
+        color: var(--rose-fonce);
+    }
+
+    .social-links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .social-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        background: var(--blanc);
+        border: 3px solid var(--rose-fonce);
+        border-radius: 12px;
+        padding: 15px;
+        font-size: 1.4rem;
+        color: var(--rose-fonce);
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 8px rgba(214, 51, 132, 0.3);
+    }
+
+    .social-link:hover {
+        background: var(--rose-soutenu);
+        color: var(--blanc);
+        border-color: var(--rose-soutenu);
+    }
+
+    .social-link svg {
+        width: 24px;
+        height: 24px;
+        fill: currentColor;
+    }
+
+    /* --- Responsive --- */
+    @media (max-width: 900px) {
+        .container {
+            flex-direction: column;
+        }
+
+        nav {
+            width: 100%;
+            box-shadow: none;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    Mes Réseaux Sociaux
+</header>
+
+<div class="container">
+    <!-- MENU -->
+    <nav>
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="page1.html">Accueil</a></li>
+            <li><a href="page2.html">Dernières réalisations</a></li>
+            <li><a href="page3.html">Rendez-vous</a></li>
+            <li><a href="page4.html">À propos</a></li>
+            <li><a href="page5.html">Avis clients</a></li>
+            <li><a href="page6.html">Conseils &amp; entretien</a></li>
+            <li><a href="page7.html">Offres et promos</a></li>
+            <li><a href="mailto: lesonglesdelola@gmail.com">Envoyer un email 📧</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENU -->
+    <main>
+        <h2>Retrouvez-moi sur les réseaux :</h2>
+        <div class="social-links">
+            <a href="https://www.facebook.com/tonprofil" target="_blank" class="social-link">
+                <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.62 9.84v-6.96H8.69v-2.88h1.69v-2.2c0-1.66 1-2.57 2.47-2.57.71 0 1.45.13 1.45.13v1.6h-.82c-.81 0-1.06.5-1.06 1.02v1.9h1.8l-.29 2.88h-1.5v6.96A10 10 0 0 0 22 12"/></svg>
+                Facebook
+            </a>
+            <a href="https://www.instagram.com/tonprofil" target="_blank" class="social-link">
+                <svg viewBox="0 0 24 24"><path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c.55 0 1 .45 1 1v2a1 1 0 1 1-2 0V5c0-.55.45-1 1-1zm-5 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+                Instagram
+            </a>
+            <a href="https://www.tiktok.com/@tonprofil" target="_blank" class="social-link">
+                <svg viewBox="0 0 24 24"><path d="M9 3v12a4 4 0 0 0 4 4c3 0 5-2 5-5V7h-3v6a2 2 0 0 1-2 2c-1 0-2-1-2-2V3H9z"/></svg>
+                TikTok
+            </a>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>

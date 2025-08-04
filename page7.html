@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tarifs - Les Ongles De Lola 76</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+  :root {
+    --rose-fonce: #D63384;
+    --rose-pastel: #FFB6C1;
+    --rose-soutenu: #FF69B4;
+    --texte-fonce: #000000;
+  }
+
+  body {
+    font-family: 'Lobster', cursive;
+    background-color: var(--rose-pastel);
+    color: var(--texte-fonce);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  header {
+    background: linear-gradient(90deg, var(--rose-fonce), var(--rose-soutenu));
+    color: white;
+    text-align: center;
+    padding: 20px;
+    flex-shrink: 0;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+
+  nav {
+    background-color: var(--rose-pastel);
+    padding: 20px;
+    width: 250px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+  }
+
+  nav h2 {
+    color: var(--rose-fonce);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  nav li {
+    margin-bottom: 10px;
+  }
+
+  nav a.btn {
+    display: inline-block;
+    background: white;
+    color: var(--rose-soutenu);
+    padding: 12px 15px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s;
+    width: 80%;
+    box-shadow: 0 3px 6px rgba(212,165,200,0.3);
+  }
+
+  nav a.btn:hover {
+    background: var(--rose-soutenu);
+    color: white;
+  }
+
+  .container {
+    display: flex;
+    flex: 1;
+    padding: 30px 20px;
+  }
+
+  main {
+    flex: 1;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 40px 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .price {
+    font-size: 4rem;
+    color: var(--rose-fonce);
+    margin: 20px 0;
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .container {
+      flex-direction: column;
+      padding: 20px 10px;
+    }
+
+    nav {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    nav a.btn {
+      width: auto;
+    }
+
+    main {
+      max-width: 100%;
+      padding: 30px 20px;
+      font-size: 1.3rem;
+    }
+
+    .price {
+      font-size: 3rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Les Ongles De Lola 76</h1>
+</header>
+
+<div class="container">
+  <nav>
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="page1.html" class="btn">Accueil</a></li>
+      <li><a href="page2.html" class="btn">Dernières réalisations</a></li>
+      <li><a href="page4.html" class="btn">À propos</a></li>
+      <li><a href="page5.html" class="btn">Avis clients</a></li>
+      <li><a href="page6.html" class="btn">Conseils & entretien</a></li>
+      <li><a href="page8.html" class="btn">Réseaux sociaux</a></li>
+      <li><a href="mailto:lesonglesdelola@gmail.com" class="btn">Envoyer un email 📧</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Tarifs</h2>
+    <p>Le prix pour une prestation est de :</p>
+    <div class="price">15 €</div>
+    <h6>Au bout de 10 préstations vous avez une réduction de 10% sur la prochaine</h6>
+  </main>
+</div>
+
+</body>
+</html>

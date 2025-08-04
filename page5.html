@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Avis clients - Les Ongles De Lola 76</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+    :root {
+      --rose-fonce: #D63384;
+      --rose-pastel: #FFB6C1;
+      --rose-soutenu: #FF69B4;
+      --texte-fonce: #000000;
+      --blanc: #fff;
+    }
+
+    body {
+      font-family: 'Lobster', cursive;
+      margin: 0;
+      padding: 0;
+      background-color: var(--rose-pastel);
+      color: var(--texte-fonce);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(90deg, var(--rose-fonce), var(--rose-soutenu));
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .container {
+      display: flex;
+      flex: 1;
+    }
+
+    nav {
+      width: 250px;
+      background-color: var(--rose-pastel);
+      padding: 20px;
+      box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    }
+
+    nav h2 {
+      color: var(--rose-fonce);
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.6rem;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav li {
+      margin-bottom: 15px;
+    }
+
+    nav a {
+      display: block;
+      text-align: center;
+      background: var(--blanc);
+      color: var(--rose-fonce);
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background: var(--rose-soutenu);
+      color: var(--blanc);
+    }
+
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .reviews-box {
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 800px;
+      width: 100%;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+
+    .reviews-box h2 {
+      color: var(--rose-fonce);
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .review {
+      border-left: 4px solid var(--rose-fonce);
+      padding-left: 15px;
+      margin-bottom: 20px;
+    }
+
+    .review p {
+      font-size: 1.2rem;
+      margin: 5px 0;
+    }
+
+    .review .author {
+      font-weight: bold;
+      font-size: 1rem;
+      color: var(--rose-soutenu);
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+      }
+
+      nav {
+        width: 100%;
+        text-align: center;
+        box-shadow: none;
+      }
+
+      nav a {
+        width: auto;
+      }
+
+      main {
+        padding: 20px 10px;
+      }
+
+      .reviews-box {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Les Ongles De Lola 76</h1>
+  </header>
+
+  <div class="container">
+    <nav>
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="page1.html">Accueil</a></li>
+        <li><a href="page2.html">Dernières réalisations</a></li>
+        <li><a href="page3.html">Rendez-vous</a></li>
+        <li><a href="page4.html">À propos</a></li>
+        <li><a href="page6.html">Conseils & entretien</a></li>
+        <li><a href="page7.html">Offres et promos</a></li>
+        <li><a href="page8.html">Liens vers mes réseaux sociaux</a></li>
+        <li><a href="mailto:lesonglesdelola@gmail.com">Envoyer un email 📧</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="reviews-box">
+        <h2>Avis clients</h2>
+
+        <div class="review">
+          <p>"Un travail parfait, mes ongles tiennent super bien et le rendu est magnifique. Je recommande Lola à 100%."</p>
+          <p class="author">— Sophie M.</p>
+        </div>
+
+        <div class="review">
+          <p>"Toujours ponctuelle, à l'écoute et super douce. C'est un vrai moment de détente."</p>
+          <p class="author">— Amélie R.</p>
+        </div>
+
+        <div class="review">
+          <p>"Lola a su exactement ce que je voulais ! Merci encore pour ta patience et ton professionnalisme."</p>
+          <p class="author">— Clara T.</p>
+        </div>
+
+        <div class="review">
+          <p>"Des prestations de qualité dans un cadre chaleureux. Je ne vais plus ailleurs !"</p>
+          <p class="author">— Julie B.</p>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>

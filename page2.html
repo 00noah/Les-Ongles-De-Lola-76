@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dernières réalisations</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+    :root {
+        --rose-fonce: #D63384;
+        --rose-pastel: #FFB6C1;
+        --rose-soutenu: #FF69B4;
+        --texte-fonce: #FF69B4;
+    }
+
+    body {
+        font-family: 'Lobster', cursive;
+        margin: 0;
+        padding: 0;
+        background-color: var(--rose-pastel);
+        color: var(--texte-fonce);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    header {
+        background: linear-gradient(90deg, var(--rose-fonce), var(--rose-soutenu));
+        color: white;
+        text-align: center;
+        padding: 25px 10px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        flex-shrink: 0;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2.8em;
+    }
+
+    .container {
+        display: flex;
+        flex: 1;
+        min-height: 0;
+    }
+
+    nav {
+        background-color: var(--rose-pastel);
+        width: 250px;
+        padding: 20px;
+        box-sizing: border-box;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+        flex-shrink: 0;
+        overflow-y: auto;
+    }
+
+    nav h2 {
+        color: var(--rose-fonce);
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    nav li {
+        margin-bottom: 15px;
+    }
+
+    nav a.btn {
+        display: block;
+        background: white;
+        color: var(--texte-fonce);
+        padding: 12px 15px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        transition: background 0.3s ease, color 0.3s ease;
+        box-shadow: 0 3px 6px rgba(212,165,200,0.3);
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    nav a.btn:hover {
+        background: var(--rose-soutenu);
+        color: white;
+    }
+
+    section {
+        flex: 1;
+        padding: 30px;
+        overflow-y: auto;
+        text-align: center;
+    }
+
+    section h2 {
+        color: var(--rose-fonce);
+        margin-bottom: 20px;
+    }
+
+    .galerie {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .galerie img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+            border: 3px solid var(--rose-fonce);
+        }
+
+        .galerie img:hover {
+            transform: scale(1.05);
+            border-color: var(--rose-soutenu);}
+
+    footer {
+        background-color: var(--rose-fonce);
+        color: white;
+        text-align: center;
+        padding: 15px;
+        flex-shrink: 0;
+        font-size: 14px;
+        box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 900px) {
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav {
+            width: 100%;
+            height: auto;
+            box-shadow: none;
+        }
+
+        nav a.btn {
+            width: auto;
+        }
+
+        .galerie img {
+            width: 90%;
+            height: auto;
+        }
+
+        section {
+            padding: 15px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Les Ongles De Lola 76</h1>
+</header>
+
+<div class="container">
+    <nav>
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="page1.html" class="btn">Accueil</a></li>
+            <li><a href="page3.html" class="btn">Rendez-vous</a></li>
+            <li><a href="page4.html" class="btn">À propos</a></li>
+            <li><a href="page5.html" class="btn">Avis clients</a></li>
+            <li><a href="page6.html" class="btn">Conseils & entretien</a></li>
+            <li><a href="page7.html" class="btn">Offres et promos</a></li>
+            <li><a href="page8.html" class="btn">Liens vers mes réseaux sociaux</a></li>
+            <li><a href="mailto:lesonglesdelola@gmail.com" class="btn">Envoyer un email 📧</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Découvrez mes dernières créations</h2>
+        <div class="galerie">
+            <img src="4.jpg" alt="Réalisation 1">
+            <img src="2.jpg" alt="Réalisation 2">
+            <img src="3.jpg" alt="Réalisation 3">
+            <img src="5.jpg" alt="Réalisation 5">
+        </div>
+    </section>
+</div>
+
+<footer>
+    &copy; 2025 Les Ongles De Lola 76 - Tous droits réservés
+</footer>
+
+</body>
+</html>

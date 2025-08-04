@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>À propos</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    :root {
+        --rose-fonce: #D63384;
+        --rose-pastel: #FFB6C1;
+        --rose-soutenu: #FF69B4;
+        --texte-fonce: #1E1E1E;
+    }
+    body { font-family: 'Lobster', cursive; margin: 0; padding: 0; background-color: var(--rose-pastel); color: var(--texte-fonce); display: flex; flex-direction: column; min-height: 100vh; }
+    header { background: linear-gradient(90deg, var(--rose-fonce), var(--rose-soutenu)); color: white; text-align: center; padding: 25px 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); flex-shrink: 0; }
+    header h1 { margin: 0; font-size: 2.8em; }
+    .container { display: flex; flex: 1; min-height: 0; }
+    nav { background-color: var(--rose-pastel); width: 250px; padding: 20px; box-sizing: border-box; box-shadow: 2px 0 5px #FF69B4; flex-shrink: 0; overflow-y: auto; }
+    nav h2 { color: var(--rose-fonce); margin-top: 0; margin-bottom: 15px; font-size: 1.5em; text-align: center; }
+    nav ul { list-style-type: none; padding: 0; margin: 0; text-align: center; }
+    nav li { margin-bottom: 15px; }
+    nav a.btn { display: block; background: white; color: var(--rose-soutenu); padding: 12px 15px; border-radius: 12px; text-decoration: none; font-weight: bold; text-align: center; transition: background 0.3s ease, color 0.3s ease; box-shadow: 0 3px 6px rgba(212,165,200,0.3); width: 80%; margin: 0 auto; }
+    nav a.btn:hover { background: var(--rose-soutenu); color: white; }
+    section { flex: 1; padding: 30px; overflow-y: auto; text-align: center; }
+    section h2 { color: var(--rose-fonce); margin-bottom: 20px; }
+    footer { background-color: var(--rose-fonce); color: white; text-align: center; padding: 15px; flex-shrink: 0; font-size: 14px; box-shadow: 0 -2px 6px rgba(0,0,0,0.1); }
+    @media (max-width: 900px) {
+        .container { flex-direction: column; align-items: center; }
+        nav { width: 100%; height: auto; box-shadow: none; }
+        nav a.btn { width: auto; }
+        section { padding: 15px; }
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>Les Ongles De Lola 76</h1>
+</header>
+<div class="container">
+    <nav>
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="page1.html" class="btn">Accueil</a></li>
+            <li><a href="page2.html" class="btn">Dernières réalisations</a></li>
+            <li><a href="page3.html" class="btn">Rendez-vous</a></li>
+            <li><a href="page5.html" class="btn">Avis clients</a></li>
+            <li><a href="page6.html" class="btn">Conseils & entretien</a></li>
+            <li><a href="page7.html" class="btn">Offres et promos</a></li>
+            <li><a href="page8.html" class="btn">Liens vers mes réseaux sociaux</a></li>
+            <li><a href="mailto:lesonglesdelola@gmail.com" class="btn">Envoyer un email 📧</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>À propos</h2>
+        <p>Bonjour et bienvenue ! Je m'appelle Lola, prothésiste ongulaire passionnée située en Seine-Maritime. Depuis plusieurs années, je me consacre à la beauté et au soin des ongles avec précision et créativité.</p>
+        <p>Mon objectif est de sublimer vos mains en alliant élégance, hygiène, et écoute de vos envies. Que vous aimiez les styles discrets, colorés, originaux ou très travaillés, je m'adapte à vos goûts avec professionnalisme.</p>
+        <p>Je vous accueille dans un cadre chaleureux et convivial, et je prends le temps de vous conseiller pour des résultats durables et personnalisés.</p>
+        <p>N'hésitez pas à me contacter pour toute question ou à réserver un rendez-vous directement via la page dédiée !</p>
+    </section>
+</div>
+<footer>
+    &copy; 2025 Les Ongles De Lola 76 - Tous droits réservés
+</footer>
+</body>
+</html>
